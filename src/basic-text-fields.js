@@ -26,11 +26,14 @@ export default function BasicTextFields() {
     >
       <TextField
         sx={{
+          "& label.Mui-focused": {
+            color: '#FF0000'
+          },
           "& .Mui-focused fieldset": {
-            borderColor: "#1d72e7 !important",
+            borderColor: "#FF0000 !important",
           },
           "& fieldset": {
-            borderColor: "#1d72e780",
+            borderColor: "#FF000080",
           },
         }}
         onMouseEnter={clickHandler}
