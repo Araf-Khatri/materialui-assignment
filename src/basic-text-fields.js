@@ -4,6 +4,7 @@ import TextField from "@mui/material/TextField";
 import "./styles.css";
 
 export default function BasicTextFields() {
+  const color = "#FF0000"
   const clickHandler = (e) => {
     if (e.target.closest("div").classList.contains("custom")) {
       return;
@@ -27,13 +28,13 @@ export default function BasicTextFields() {
       <TextField
         sx={{
           "& label.Mui-focused": {
-            color: '#FF0000'
+            color: `${color}`
           },
           "& .Mui-focused fieldset": {
-            borderColor: "#FF0000 !important",
+            borderColor: `${color} !important`,
           },
           "& fieldset": {
-            borderColor: "#FF000080",
+            borderColor: `${color}80`,
           },
         }}
         onMouseEnter={clickHandler}
